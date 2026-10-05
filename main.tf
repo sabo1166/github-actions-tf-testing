@@ -26,3 +26,5 @@ resource "aws_s3_bucket" "app" {
     Name = var.bucket_tag
   }
 }
+
+
