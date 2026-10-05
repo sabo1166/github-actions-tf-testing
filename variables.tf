@@ -21,3 +21,14 @@ variable "subnet_tag" {
   type        = string
   default     = "dev-subnet"
 }
+
+
+variable "bucket_name" {
+  description = "Name of the S3 bucket"
+  type        = string
+}
+
+variable "bucket_tag" {
+  description = "Tag name for the S3 bucket"
+  type        = string
+}
