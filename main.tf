@@ -15,3 +15,14 @@ resource "aws_subnet" "dev"{
 }
 
 
+# ========================================
+# S3 Bucket
+# ========================================
+
+resource "aws_s3_bucket" "app" {
+  bucket = var.bucket_name
+
+  tags = {
+    Name = var.bucket_tag
+  }
+}
